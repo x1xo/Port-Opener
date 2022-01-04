@@ -1,0 +1,12 @@
+{
+    "Port": "8080",
+    "Keys": {
+        "Private": "/path/to/private.pem",
+        "Public": "/path/to/public.pem",
+        "Token": "randomly-generated-string-used-to-access-the-machine"
+    },
+    "Commands": {
+        "Post": [ "sudo firewall-cmd --zone=public --permanent --add-port=<port>/tcp", "sudo firewall-cmd --reload" ],
+        "Delete": ["sudo firewall-cmd --zone=public --permanent --remove-port=<port>/tcp", "sudo firewall-cmd --reload" ]
+    }
+}
