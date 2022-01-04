@@ -1,0 +1,12 @@
+{
+  "name": "port-opener",
+  "version": "1.0.0",
+  "description": "Port opener that opens and closes a port on a machine depending on your needs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "piton",
+  "license": "ISC"
+}
