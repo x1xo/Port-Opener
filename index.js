@@ -65,6 +65,7 @@ if(config.Port === "8080"){
 
     httpServer.listen(8080, ()=>{
         console.log("[HTTP] Running on port " + 8080)
+        exec('sudo service firewalld start');
     })
     
 } else if (config.Port === "8443"){
@@ -74,6 +75,7 @@ if(config.Port === "8080"){
     const httpsServer = https.createServer(credentials, app);
     httpsServer.listen(8443, () => {
         console.log("[HTTPS] Running on port " + 8443)
+        exec('sudo service firewalld start');
     })
 }
 
